@@ -1,0 +1,115 @@
+/* Day & Night Modes */
+.day-mode {
+    background: linear-gradient(135deg, #4facfe, #00c6ff); /* Clear sky blue */
+    color: #000000; /* Dark text for readability */
+    transition: background 0.5s ease-in-out;
+}
+
+.night-mode {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Dark navy gradient */
+    color: #ffffff; /* White text for contrast */
+    transition: background 0.5s ease-in-out;
+}
+
+/* Titles */
+.app-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.subtitle {
+    color: #f0f0f0;
+    font-size: 1rem;
+}
+
+.section-title {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Search Bar & Buttons */
+#city-input {
+    border: 2px solid #007bff;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#search-btn,
+#current-location-btn {
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    color: #ffffff;
+}
+
+#search-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.04);
+}
+
+#current-location-btn:hover {
+    background-color: #1e7e34;
+    transform: scale(1.04);
+}
+
+/* Current Weather Card */
+.weather-card {
+    background: rgba(255, 255, 255, 0.85); /* More solid for readability */
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    color: #000000;
+    text-align: center;
+}
+
+.weather-card img {
+    width: 90px;
+    height: 90px;
+}
+
+.placeholder-text {
+    color: #555555;
+    font-style: italic;
+}
+
+/* Forecast Cards */
+#forecast .card {
+    background: rgba(255, 255, 255, 0.9); /* Solid white for clear text */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    color: #000000;
+    padding: 10px;
+    min-width: 140px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#forecast .card:hover {
+    transform: translateY(-4px);
+}
+
+#forecast .card h6 {
+    color: #333333;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+#forecast .card img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Dropdown */
+.dropdown-menu {
+    max-height: 200px;
+    overflow-y: auto;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+.footer-text {
+    color: #f0f0f0;
+    font-size: 0.9rem;
+}
